@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TuckersToolbox
 {
-    class MultiKeyDictionary<TKey1, TKey2, TValue> : Dictionary<TKey1, TValue>
+    public class MultiKeyDictionary<TKey1, TKey2, TValue> : Dictionary<TKey1, TValue>
     {
         private readonly Dictionary<Tuple<TKey1, TKey2>, TValue> _innerDictionary;
 
